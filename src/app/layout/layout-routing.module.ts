@@ -6,7 +6,7 @@ const routes: Routes = [
     {
         path: '', component: LayoutComponent,
         children: [
-            { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },
+            { path: 'products', loadChildren: './products/products.module#ProductsModule' },
             { path: 'blank-page', loadChildren: './blank-page/blank-page.module#BlankPageModule' },
         ]
     }

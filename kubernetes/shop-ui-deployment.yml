@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: shop-ui
+spec:
+  template:
+    metadata:
+      labels:
+        app: shop-ui
+        env: dev
+        ver: v1
+    spec:
+      containers:
+        - image: 'khdevnet/shop-ui:latest'
+          name: shop-ui
+          ports:
+            - containerPort: 80         
