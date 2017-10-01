@@ -11,9 +11,6 @@ addons:
 language: node_js
 node_js:
   - 6.10.2
-branches:
-  only:
-    - master
 before_script:
   - set -e
   - chmod a+x ./deploy.sh
