@@ -17,6 +17,7 @@ before_script:
   - npm install
 script:
   - npm run-script build
+  - cp ./Dockerfile ./dist/
 deploy:
   - provider: script
     script: ./deploy.sh $TRAVIS_TAG $DOCKER_USERNAME $DOCKER_PASSWORD
