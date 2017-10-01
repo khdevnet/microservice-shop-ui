@@ -1,8 +1,6 @@
 #.travis.yml
 sudo: required
-
 dist: trusty
-
 addons:
   apt:
     sources:
@@ -11,18 +9,15 @@ addons:
       - google-chrome-stable
 
 language: node_js
-
 node_js:
   - 6.10.2
-
 branches:
   only:
     - master
-
 before_script:
   - set -e
+  - chmod a+x ./deploy.sh
   - npm install
-
 script:
   - npm run-script build
 deploy:
