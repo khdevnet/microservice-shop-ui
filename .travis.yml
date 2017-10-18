@@ -10,7 +10,7 @@ addons:
 
 language: node_js
 node_js:
-  - 6.10.2
+  - 7.9.0
 before_script:
   - set -e
   - chmod a+x ./build.sh
