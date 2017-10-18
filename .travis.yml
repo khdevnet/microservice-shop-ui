@@ -16,6 +16,7 @@ before_script:
   - chmod a+x ./build.sh
   - chmod a+x ./deploy.sh
   - npm install -g npm@latest
+  - npm -v
 script:
   - ./build.sh
 deploy:
