@@ -1,0 +1,23 @@
+<div>
+    <app-page-header [heading]="'Product'" [icon]="'fa-table'"></app-page-header>
+    <div class="row">
+        <div class="col-lg-6">
+
+            <form role="form" #productForm="ngForm" *ngIf="product">
+                <fieldset class="form-group">
+                    <label>Name</label>
+                    <input class="form-control" name="name" required [(ngModel)]="product.name">
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label>Price</label>
+                    <input class="form-control" name="price" required [(ngModel)]="product.price">
+                </fieldset>
+
+                <button [disabled]="!productForm.valid" type="submit" class="btn btn-secondary" (click)="submit()">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </form>
+
+        </div>
+    </div>
+</div>

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../../router.animations';
-import { ProductsService } from './products.service';
+import { ProductsService } from '../products.service';
 
 @Component({
-    selector: 'app-tables',
+    selector: 'shop-products',
     templateUrl: './products.component.html',
     styleUrls: ['./products.component.scss'],
     animations: [routerTransition()]
