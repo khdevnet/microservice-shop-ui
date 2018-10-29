@@ -1,0 +1,38 @@
+<!--================Home Banner Area =================-->
+<section class="banner_area">
+  <div class="banner_inner d-flex align-items-center">
+    <div class="container">
+      <div class="banner_content text-center">
+        <h2>Products</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--================End Home Banner Area =================-->
+<!--================Category Product Area =================-->
+<section class="cat_product_area p_120">
+  <div class="container">
+    <div class="row flex-row-reverse">
+      <div class="latest_product_inner row">
+        <div class="col-lg-3 col-md-3 col-sm-6" *ngFor="let product of products;">
+          <div class="f_p_item">
+            <div class="f_p_img">
+              <img class="img-fluid" [src]="product.url" alt="">
+              <div class="p_icon">
+                <a (click)="buy(product.id)" href="javascript: void(0);">
+                  <i class="lnr lnr-cart"></i>
+                </a>
+              </div>
+            </div>
+            <a href="#">
+              <h4>{{product.name}}</h4>
+            </a>
+            <h5>${{product.price}}</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

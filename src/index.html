@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Star Wars shop</title>
@@ -15,58 +16,70 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+
 <body>
-<!--================Header Menu Area =================-->
-<header class="header_area">
-  <div class="main_menu">
-    <nav class="navbar navbar-expand-lg navbar-light main_box">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <a class="navbar-brand logo_h" href="index.html"><img src="assets/img/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-          <ul class="nav navbar-nav menu_nav ml-auto">
-            <li class="nav-item active">
-              <a href="#" class="nav-link" >Shop</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link" >Cart</a>
-            </li>
-          </ul>
+  <!--================Header Menu Area =================-->
+  <header class="header_area">
+      <div class="top_menu row m0">
+          <div class="container">
+     <div class="float-left">
+       <a href="mailto:support@colorlib.com">support@colorlib.com</a>
+       <a href="#">Welcome to Catalouge</a>
+     </div>
+     <div class="float-right">
+       <ul class="header_social">
+         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+         <li><a href="#"><i class="fa fa-behance"></i></a></li>
+       </ul>
+     </div>
+          </div>	
         </div>
-      </div>
-    </nav>
-  </div>
-</header>
-<!--================Header Menu Area =================-->
-
-
-<!--================Category Product Area =================-->
-<section class="cat_product_area p_120">
-  <div class="container">
-    <div class="row flex-row-reverse">
-      <app-root></app-root>
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light main_box">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand logo_h" href="index.html">
+            <img src="assets/img/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto">
+              <li class="nav-item active">
+                <a href="/products" class="nav-link">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a href="/checkout" class="nav-link">Track order</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-  </div>
-  </div>
-  </div>
-</section>
-<!--================End Category Product Area =================-->
+  </header>
+  <!--================Header Menu Area =================-->
 
-<!--================ start footer Area  =================-->
-<footer class="footer-area">
-  <div class="row footer-bottom d-flex justify-content-between align-items-center">
-    <p class="col-lg-12 footer-text text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-  </div>
-  </div>
-</footer>
-<!--================ End footer Area  =================-->
+
+
+  <app-root></app-root>
+
+  <!--================End Category Product Area =================-->
+
+  <!--================ start footer Area  =================-->
+  <footer class="footer-area">
+    <div class="row footer-bottom d-flex justify-content-between align-items-center">
+
+    </div>
+    </div>
+  </footer>
+  <!--================ End footer Area  =================-->
 </body>
+
 </html>

@@ -3781,6 +3781,7 @@ h6 {
 .f_p_item .f_p_img {
   position: relative;
   overflow: hidden;
+  min-height: 225px;
 }
 
 .f_p_item .f_p_img .p_icon {
