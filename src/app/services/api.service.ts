@@ -10,8 +10,8 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class ApiService {
-  private productsUrl = `${environment.productsUrl}/api/v1/products/`;
-  private checkoutUrl = `${environment.checkoutUrl}/api/v1/checkout/`;
+  private productsUrl = `${environment.productsUrl}/api/v1/products`;
+  private checkoutUrl = `${environment.checkoutUrl}/api/v1/checkout`;
 
   constructor(private http: HttpClient) {
   }
