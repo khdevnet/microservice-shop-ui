@@ -4,13 +4,14 @@ import { Observable } from 'rxjs';
 import { ProductModel } from '../models/product.model';
 import { CreateOrderModel } from '../models/create-order.model';
 import { OrderStatusModel } from '../models/order-status.model';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-  private productsUrl = 'http://localhost:57737/api/v1/products/';
-  private checkoutUrl = 'http://localhost:61033/api/v1/checkout/';
+  private productsUrl = `${environment.productsUrl}/api/v1/products/`;
+  private checkoutUrl = `${environment.checkoutUrl}/api/v1/checkout/`;
 
   constructor(private http: HttpClient) {
   }
