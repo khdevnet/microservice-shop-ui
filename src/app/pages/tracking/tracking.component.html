@@ -15,7 +15,7 @@
 <!--================End Home Banner Area =================-->
 
 <!--================Tracking Box Area =================-->
-<section class="p_120">
+<section class="p_20">
   <div class="container">
     <div class="tracking_box_inner">
       <p>To track your order please enter your Order ID in the box below and press the "Track" button. This was given to you
@@ -43,6 +43,7 @@
           </tr>
           </thead>
           <tbody>
+
           <tr *ngFor="let order of ordersSummary.lastOrders;">
             <td>
               <div class="media">
@@ -59,6 +60,15 @@
               </div>
             </td>
 
+          </tr>
+          <tr class="bottom_button">
+            <th>
+              <button (click)="track()" class="gray_btn" href="#">Update</button>
+            </th>
+            <th>
+
+              Count: {{ordersSummary.count}}
+            </th>
           </tr>
           </tbody>
         </table>
