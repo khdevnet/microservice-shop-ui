@@ -10,9 +10,9 @@ import {OrdersSummaryModel} from '../../models/orders-summary.model';
 })
 export class TrackingComponent implements OnInit {
 
-  private orderId = '';
-  private customerId = 1;
-  private ordersSummary: OrdersSummaryModel;
+  public orderId = '';
+  public customerId = 1;
+  public ordersSummary: OrdersSummaryModel;
 
   constructor(private api: ApiService, private route: ActivatedRoute) {
   }
