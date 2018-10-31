@@ -14,7 +14,7 @@ export class CheckoutComponent implements OnInit {
   private customerId = 1;
   public customerName = 'Han';
   public customerLastname = 'Solo';
-  private total: number;
+  public total: number;
   products: ProductModel[];
 
   constructor(private api: ApiService, private route: ActivatedRoute, private router: Router) {
