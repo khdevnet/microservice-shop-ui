@@ -3,10 +3,10 @@
   <div class="banner_inner d-flex align-items-center">
     <div class="container">
       <div class="banner_content text-center">
-        <h2>Order Tracking</h2>
+        <h2>Checkout</h2>
         <div class="page_link">
           <a href="/products">Catalog</a>
-          <a href="#">Order Tracking</a>
+          <a href="#">Checkout</a>
         </div>
       </div>
     </div>
@@ -14,21 +14,38 @@
 </section>
 <!--================End Home Banner Area =================-->
 
-<!--================Tracking Box Area =================-->
-<section class="tracking_box_area p_120">
+<!--================Checkout Area =================-->
+<section class="checkout_area p_120">
   <div class="container">
-    <div class="tracking_box_inner">
-      <p>To track your order please enter your Order ID in the box below and press the "Track" button. This was given to you
-        on your receipt and in the confirmation email you should have received.</p>
-      <form class="row tracking_form" action="#" method="post" novalidate="novalidate">
-        <div class="col-md-12 form-group">
-          <input type="text" class="form-control" id="order" name="order" placeholder="Order ID">
+    <div class="billing_details">
+      <div class="row">
+        <div class="col-lg-8">
+          <h3>Billing Details</h3>
+          <form class="row contact_form" action="#" method="post" novalidate="novalidate">
+            <div class="col-md-6 form-group p_star">
+              <input [(ngModel)]="customerName" type="text" class="form-control" id="first" name="name">
+            </div>
+            <div class="col-md-6 form-group p_star">
+              <input  [(ngModel)]="customerLastname" type="text" class="form-control" id="last" name="last-name">
+            </div>
+          </form>
         </div>
-        <div class="col-md-12 form-group">
-          <button type="submit" value="submit" class="btn submit_btn">Track Order</button>
+        <div class="col-lg-4">
+          <div class="order_box">
+            <h2>Your Order</h2>
+            <ul class="list">
+              <li><a href="#">Product <span>Total</span></a></li>
+              <li *ngFor="let product of products;"><a href="#">{{product.name}}<span class="middle">x 01</span> <span class="last">${{product.price}}</span></a></li>
+            </ul>
+            <ul class="list list_2">
+              <li><a href="#">Subtotal <span>${{total}}</span></a></li>
+              <li><a href="#">Total <span>${{total}}</span></a></li>
+            </ul>
+            <a (click)="createOrder()" class="main_btn" href="javascript: void(0);">Create Order</a>
+          </div>
         </div>
-      </form>
+      </div>
     </div>
   </div>
 </section>
-<!--================End Tracking Box Area =================-->
+<!--================End Checkout Area =================-->

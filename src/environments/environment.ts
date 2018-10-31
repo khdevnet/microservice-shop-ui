@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  checkoutUrl: "'http://localhost:61033",
+  checkoutUrl: "http://localhost:61033",
   productsUrl: "http://localhost:57737"
 };
 

@@ -95,6 +95,11 @@ button:focus {
   padding-bottom: 100px;
 }
 
+.p_20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .p0 {
   padding-left: 0px;
   padding-right: 0px;
